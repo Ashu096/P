@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Leaf, Shield, BarChart3, Users, Bell, Globe } from "lucide-react";
+import { Menu, X, Leaf, Shield, BarChart3, Users, Bell, Globe, LogIn } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const navItems = [
   { path: "/", label: "Home", icon: Leaf },
@@ -52,6 +53,9 @@ const Navbar = () => {
             <div className="pulse-dot" />
             <span className="text-muted-foreground">Live</span>
           </div>
+          <Button asChild size="sm" className="font-medium">
+            <Link to="/login"><LogIn className="w-4 h-4 mr-1" /> Login</Link>
+          </Button>
         </div>
 
         <button
