@@ -53,6 +53,9 @@ const Navbar = () => {
             <div className="pulse-dot" />
             <span className="text-muted-foreground">Live</span>
           </div>
+          <Button asChild size="sm" className="font-medium">
+            <Link to="/login"><LogIn className="w-4 h-4 mr-1" /> Login</Link>
+          </Button>
         </div>
 
         <button
