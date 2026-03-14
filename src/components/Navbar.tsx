@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Leaf, Shield, BarChart3, Users, Bell, Globe, LogIn } from "lucide-react";
+import { Menu, X, Leaf, Shield, BarChart3, Users, Bell, Globe, LogIn, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
   { path: "/", label: "Home", icon: Leaf },
   { path: "/dashboard", label: "Dashboard", icon: BarChart3 },
   { path: "/compliance", label: "Compliance", icon: Shield },
+  { path: "/copilot", label: "AI Copilot", icon: Sparkles },
   { path: "/industries", label: "Industries", icon: Users },
   { path: "/alerts", label: "Alerts", icon: Bell },
   { path: "/citizen", label: "Citizen Portal", icon: Globe },

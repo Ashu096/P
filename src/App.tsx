@@ -11,7 +11,9 @@ import Industries from "./pages/Industries.tsx";
 import Alerts from "./pages/Alerts.tsx";
 import CitizenPortal from "./pages/CitizenPortal.tsx";
 import Login from "./pages/Login.tsx";
+import Copilot from "./pages/Copilot.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import CopilotWidget from "@/components/CopilotWidget";
 
 const queryClient = new QueryClient();
 
@@ -29,9 +31,11 @@ const App = () => (
           <Route path="/industries" element={<Industries />} />
           <Route path="/alerts" element={<Alerts />} />
           <Route path="/citizen" element={<CitizenPortal />} />
+          <Route path="/copilot" element={<Copilot />} />
           <Route path="/login" element={<Login />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <CopilotWidget />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

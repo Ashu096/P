@@ -39,7 +39,7 @@ const Index = () => (
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight text-foreground leading-[1.1] mb-6">
-              Prithi<span className="text-primary">Net</span>
+              Prithvi<span className="text-primary">Net</span>
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground font-light mb-3 leading-relaxed max-w-2xl">
               Smart Environmental Monitoring Platform for Chhattisgarh
@@ -110,6 +110,14 @@ const Index = () => (
               <p className="text-sm text-muted-foreground leading-relaxed">{f.desc}</p>
             </motion.div>
           ))}
+        </div>
+
+        <div className="mt-10 flex justify-center">
+          <Button asChild size="lg" className="font-semibold">
+            <Link to="/copilot">
+              Try AI Compliance Copilot <ArrowRight className="w-4 h-4 ml-2" />
+            </Link>
+          </Button>
         </div>
       </div>
     </section>
