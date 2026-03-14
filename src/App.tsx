@@ -10,6 +10,7 @@ import Compliance from "./pages/Compliance.tsx";
 import Industries from "./pages/Industries.tsx";
 import Alerts from "./pages/Alerts.tsx";
 import CitizenPortal from "./pages/CitizenPortal.tsx";
+import Login from "./pages/Login.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
